@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { useState } from "react";
 
-function TrafficChange(props) {
+function TrafficChange() {
 
   //массив состояний цветов светофора
   let [states, setState] = useState(["red", "gray", "gray"])
@@ -40,13 +40,13 @@ function TrafficChange(props) {
   };
  let redLight = {
    backgroundColor: states[0]
-  }
+ }
  let yellowLight = {
   backgroundColor: states[1]
-  }
+ }
 let greenLight = {
   backgroundColor: states[2]
-  }
+ }
 
   return(
 <div style={trafficLight}>
